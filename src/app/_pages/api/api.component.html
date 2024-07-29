@@ -1,5 +1,5 @@
 <main class="w-screen h-screen m-0 p-0 bg-gradient-to-tr from-gray-900 via-gray-950 to-gray-800 flex justify-center items-center">
-  <div class="w-[65%] h-[40rem] border-[1px] rounded-xl border-white flex gap-4 bg-gray-900">
+  <div class="w-[75%] h-[40rem]  rounded-xl flex gap-4 bg-gray-900">
     <div class="gap-4 flex flex-col justify-center items-center p-5 px-10 w-[48%]">
       <h1 class="text-center text-white text-[2rem] font-black">Create Course <span class="text-[2rem] text-blue-600">.</span></h1>
       <input [(ngModel)]="CourseModels.title"  type="text" class="outline-none border-none rounded-xl w-full p-4" placeholder="Enter Course Title ...">
@@ -76,7 +76,7 @@
       transition-all duration-500 hover:bg-blue-400 hover:translate-y-1">Add Student</button>
           </div>
 
-          <div class="  flex flex-col w-[80%] h-full overflow-y-auto mt-5 items-center gap-3">
+          <div class="flex flex-col w-[80%] h-full overflow-y-auto mt-5 items-center gap-3">
             <div class="text-white text-center text-[2rem]">Students</div>
             <div class="text-white font-bold flex p-5 w-[80%] bg-gray-800 rounded-xl justify-around g items-center" *ngFor="let student of Students$">
               <h1>{{student.firstName}}</h1>
