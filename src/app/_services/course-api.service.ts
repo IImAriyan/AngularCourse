@@ -31,4 +31,7 @@ export class CourseAPIService {
     return this.http.post<Student>(this.apiLink+"Students/Add",{firstName:student.firstName,lastName:student.lastName,age:student.age,forCourse:student.forCourse})
   }
 
+  removeStudent(id:number):Observable<Student[]> {
+    return this.http.get<Student[]>(this.apiLink+"Students/Remove/"+id)
+  }
 }
